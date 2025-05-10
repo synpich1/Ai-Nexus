@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="20" fill="#5C6BC0"/>
+  <circle cx="250" cy="280" r="100" fill="#3949AB"/>
+  <circle cx="250" cy="200" r="50" fill="#9FA8DA"/>
+  <circle cx="400" cy="260" r="100" fill="#3949AB"/>
+  <circle cx="400" cy="180" r="50" fill="#9FA8DA"/>
+  <circle cx="550" cy="280" r="100" fill="#3949AB"/>
+  <circle cx="550" cy="200" r="50" fill="#9FA8DA"/>
+  <rect x="100" y="400" width="600" height="150" rx="20" fill="#3949AB"/>
+  <text x="400" y="480" font-family="Arial" font-size="40" text-anchor="middle" fill="white">Команда AI NEXUS</text>
+</svg> 

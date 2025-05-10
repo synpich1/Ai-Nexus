@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI NEXUS | Инновационные мобильные приложения</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки AOS для анимаций при скролле -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Современный динамичный фон -->
+    <div class="dynamic-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid"></div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Прелоадер с анимацией -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Навигация -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span>AI NEXUS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Главная</a>
+                <a href="#apps">Приложения</a>
+                <a href="#about">О нас</a>
+                <a href="#testimonials">Отзывы</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="glitch-text">Инновационные<br><span class="accent">мобильные приложения</span></h1>
+                <p>Мы создаем приложения, которые делают вашу жизнь проще, экономят время и приносят пользу каждый день</p>
+                <div class="cta-buttons">
+                    <a href="#apps" class="btn primary-btn">Наши приложения</a>
+                    <a href="#contact" class="btn secondary-btn">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface"></div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-icon icon-1" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="floating-icon icon-2" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-wallet"></i></div>
+                    <div class="floating-icon icon-3" data-aos="fade-up" data-aos-delay="600"><i class="fas fa-walking"></i></div>
+                    <div class="floating-icon icon-4" data-aos="fade-up" data-aos-delay="800"><i class="fas fa-calendar-check"></i></div>
+                    <div class="floating-icon icon-5" data-aos="fade-up" data-aos-delay="1000"><i class="fas fa-dumbbell"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Секция приложений -->
+    <section id="apps" class="apps-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+                <h2>Наши <span class="accent">приложения</span></h2>
+                <p>Создаем инновационные решения для повседневных задач</p>
+            </div>
+
+            <div class="apps-grid">
+                <!-- Приложение 1: ГдеТачка? -->
+                <div class="app-card" data-app="gdetachka" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+                    <div class="app-icon">
+                        <img src="images/где тачка.jpg" alt="ГдеТачка? иконка" class="lazy-load">
+                    </div>
+                    <div class="app-info">
+                        <h3>ГдеТачка?</h3>
+                        <p>Сохраняй геолокацию своей машины на карте и никогда не теряй её на огромных парковках</p>
+                        <div class="app-tags">
+                            <span>Транспорт</span>
+                            <span>Навигация</span>
+                        </div>
+                        <div class="app-buttons">
+                            <a href="https://www.rustore.ru/catalog/app/com.example.gdemashina" class="download-btn" target="_blank">
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
+                            <button class="details-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Приложение 2: Менеджер подписок -->
+                <div class="app-card" data-app="subscription" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                    <div class="app-icon">
+                        <img src="images/менеджер подписок.jpg" alt="Менеджер подписок иконка" class="lazy-load">
+                    </div>
+                    <div class="app-info">
+                        <h3>Менеджер подписок</h3>
+                        <p>Контролируй все свои подписки в одном месте и получай уведомления перед списанием средств</p>
+                        <div class="app-tags">
+                            <span>Финансы</span>
+                            <span>Организация</span>
+                        </div>
+                        <div class="app-buttons">
+                            <a href="https://www.rustore.ru/catalog/app/com.example.podpiska" class="download-btn" target="_blank">
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
+                            <button class="details-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Приложение 3: Эко кошелек -->
+                <div class="app-card" data-app="ecowalley" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                    <div class="app-icon">
+                        <img src="images/Эко кошёлек.jpg" alt="Эко кошелек иконка" class="lazy-load">
+                    </div>
+                    <div class="app-info">
+                        <h3>Эко кошелек: с советами от ИИ</h3>
+                        <p>Управляй своими финансами эффективно с помощью персональных рекомендаций от искусственного интеллекта</p>
+                        <div class="app-tags">
+                            <span>Финансы</span>
+                            <span>ИИ</span>
+                        </div>
+                        <div class="app-buttons">
+                            <a href="https://www.rustore.ru/catalog/app/com.example.ecocoshel2" class="download-btn" target="_blank">
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
+                            <button class="details-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Приложение 4: Step by step -->
+                <div class="app-card" data-app="stepbystep" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                    <div class="app-icon">
+                        <img src="images/step by step.jpg" alt="Step by step иконка" class="lazy-load">
+                    </div>
+                    <div class="app-info">
+                        <h3>Step by step: шагомер</h3>
+                        <p>Бесплатный шагомер с точным подсчетом шагов, калорий и пройденного расстояния</p>
+                        <div class="app-tags">
+                            <span>Фитнес</span>
+                            <span>Здоровье</span>
+                        </div>
+                        <div class="app-buttons">
+                            <a href="https://www.rustore.ru/catalog/app/com.example.stepsync" class="download-btn" target="_blank">
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
+                            <button class="details-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Приложение 5: EvoMotion AI -->
+                <div class="app-card" data-app="evomotion" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
+                    <div class="app-icon">
+                        <img src="images/EvoMotion AI.jpg" alt="EvoMotion AI иконка" class="lazy-load">
+                    </div>
+                    <div class="app-info">
+                        <h3>EvoMotion AI</h3>
+                        <p>Персональный тренер с искусственным интеллектом, который анализирует вашу технику выполнения упражнений</p>
+                        <div class="app-tags">
+                            <span>Фитнес</span>
+                            <span>ИИ</span>
+                        </div>
+                        <div class="app-buttons">
+                            <a href="https://www.rustore.ru/catalog/app/com.example.kakafit" class="download-btn" target="_blank">
+                                <i class="fas fa-download"></i> Скачать
+                            </a>
+                            <button class="details-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно с подробной информацией о приложении -->
+        <div class="app-modal">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="modal-body">
+                    <!-- Контент будет добавлен с помощью JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Счетчики статистики -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="50">
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">приложений</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">скачиваний</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="150">
+                    <div class="stat-number" data-count="4.8">0</div>
+                    <div class="stat-label">средний рейтинг</div>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">года опыта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+                <h2>Что о нас <span class="accent">говорят</span></h2>
+                <p>Отзывы реальных пользователей наших приложений</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card highlighted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/avatar1.svg" alt="Аватар пользователя" class="lazy-load">
+                        </div>
+                        <div class="testimonial-user-info">
+                            <h4>Алексей Смирнов</h4>
+                            <p>Пользователь ГдеТачка</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"После установки ГдеТачка, я больше никогда не терял свою машину на парковках торговых центров. Интерфейс приложения интуитивно понятен, а функционал точно соответствует описанию. Рекомендую всем, кто часто забывает, где припарковался!"</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">15 марта 2025</span>
+                        <div class="testimonial-app-badge">
+                            <img src="images/где тачка.jpg" alt="ГдеТачка" class="lazy-load">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card highlighted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/avatar2.svg" alt="Аватар пользователя" class="lazy-load">
+                        </div>
+                        <div class="testimonial-user-info">
+                            <h4>Екатерина Волкова</h4>
+                            <p>Пользователь Эко кошелек</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"Эко кошелек полностью изменил мой подход к финансам. Искусственный интеллект дает действительно полезные рекомендации, благодаря которым мне удалось сэкономить более 15% семейного бюджета за первый месяц использования. Приложение регулярно обновляется, добавляя новые функции."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">2 апреля 2025</span>
+                        <div class="testimonial-app-badge">
+                            <img src="images/Эко кошёлек.jpg" alt="Эко кошелек" class="lazy-load">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card highlighted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/avatar3.svg" alt="Аватар пользователя" class="lazy-load">
+                        </div>
+                        <div class="testimonial-user-info">
+                            <h4>Дмитрий Ковалев</h4>
+                            <p>Пользователь Step by step</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"Перепробовал множество шагомеров, но Step by step однозначно лучший. Точный подсчет шагов, минимальное потребление батареи и красивый дизайн. Очень удобно следить за прогрессом через встроенные графики, а система наград мотивирует двигаться больше каждый день."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">28 марта 2025</span>
+                        <div class="testimonial-app-badge">
+                            <img src="images/step by step.jpg" alt="Step by step" class="lazy-load">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card highlighted" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/avatar1.svg" alt="Аватар пользователя" class="lazy-load">
+                        </div>
+                        <div class="testimonial-user-info">
+                            <h4>Андрей Соколов</h4>
+                            <p>Пользователь EvoMotion AI</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"EvoMotion AI – настоящий прорыв в мире фитнес-приложений! Искусственный интеллект отслеживает технику выполнения упражнений через камеру и дает рекомендации в реальном времени. Благодаря приложению исправил ошибки в технике, которые не замечал годами. Результат – рост эффективности тренировок и никаких травм."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="testimonial-date">10 апреля 2025</span>
+                        <div class="testimonial-app-badge">
+                            <img src="images/EvoMotion AI.jpg" alt="EvoMotion AI" class="lazy-load">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
+                <button class="dot active"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="600">
+                    <div class="section-header">
+                        <h2>Свяжитесь <span class="accent">с нами</span></h2>
+                        <p>Есть вопросы или предложения? Напишите нам!</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>kolomok12@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Адрес</h4>
+                                <p>г. Сочи</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="600">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="input-animation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="input-animation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="support">Техническая поддержка</option>
+                                <option value="feedback">Отзыв о приложении</option>
+                                <option value="partnership">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <div class="input-animation"></div>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-wave"></div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo" data-aos="fade-up" data-aos-duration="800">
+                    <span>AI NEXUS</span>
+                    <p>Инновационные мобильные приложения</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#apps">Приложения</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#testimonials">Отзывы</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <h4>Приложения</h4>
+                        <ul>
+                            <li><a href="https://www.rustore.ru/catalog/app/com.example.gdemashina">ГдеТачка?</a></li>
+                            <li><a href="https://www.rustore.ru/catalog/app/com.example.podpiska">Менеджер подписок</a></li>
+                            <li><a href="https://www.rustore.ru/catalog/app/com.example.ecocoshel2">Эко кошелек</a></li>
+                            <li><a href="https://www.rustore.ru/catalog/app/com.example.stepsync">Step by step</a></li>
+                            <li><a href="https://www.rustore.ru/catalog/app/com.example.kakafit">EvoMotion AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <h4>Правовая информация</h4>
+                        <ul>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Пользовательское соглашение</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <p>&copy; 2025 AI NEXUS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка Вверх -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript файлы -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Скрипт для проверки загрузки JavaScript -->
+    <script>
+        // Проверка загрузки основного JavaScript файла
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM полностью загружен');
+            
+            // Проверяем, загрузился ли main.js
+            setTimeout(function() {
+                if (typeof initThemeToggle !== 'function') {
+                    console.error('Ошибка: функция initThemeToggle не найдена. Возможно, файл main.js не загрузился.');
+                    alert('Проблема с загрузкой JavaScript. Переключатель темы может не работать.');
+                } else {
+                    console.log('JavaScript успешно загружен');
+                }
+            }, 1000);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
